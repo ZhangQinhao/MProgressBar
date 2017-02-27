@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/a"
+        android:layout_marginTop="30dp"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:text="MHorProgressBar标准样例"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/c"
+        android:layout_marginTop="30dp"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:text="MHorProgressBar标准样例2"
+        android:textAllCaps="false"/>
+    <Button
+        android:id="@+id/b"
+        android:layout_marginTop="30dp"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#000000"
+        android:text="MRingProgressBar标准样例"
+        android:textAllCaps="false"/>
+</LinearLayout>

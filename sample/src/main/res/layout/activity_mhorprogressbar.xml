@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.monke.immerselayout.ImmerseLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:padding="10dp"
+    tools:context="com.monke.mprogressbar.sample.MainActivity">
+    <com.monke.mprogressbar.MHorProgressBar
+        android:id="@+id/mhp_1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:bgdrawable="#c1c1c1"
+        app:fontdrawable="#ff00ff"
+        app:radius="7dp"
+        app:cantouch="true"
+        app:maxprogress="100"
+        app:bgbordercolor="#ffff00"
+        app:bgborderwidth="2dp" />
+    <com.monke.mprogressbar.MHorProgressBar
+        android:id="@+id/mhp_2"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:bgbordercolor="#403F44"
+        app:bgborderwidth="9dp"
+        app:bgdrawable="#696969"
+        app:fontdrawable="#FF7200"
+        app:cursordrawable="@drawable/selector_progress_point"
+        app:cursordrawable_width="15dp"
+        app:cursordrawable_height="15dp"
+        app:startLeftOrRight="right"
+        app:progresswidth="20dp"
+        app:radius="10dp"
+        app:cantouch="true"
+        app:maxprogress="100"
+        app:durprogress="0" />
+
+    <com.monke.mprogressbar.MHorProgressBar
+        android:id="@+id/mhp_3"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:bgdrawable="@drawable/icon_android"
+        app:bgdrawable_type="clamp"
+        app:fontdrawable="@drawable/icon_android2"
+        app:fontdrawable_type="cover"
+        app:cantouch="true"
+        app:maxprogress="100"/>
+
+    <com.monke.mprogressbar.MHorProgressBar
+        android:id="@+id/mhp_4"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:bgdrawable="@drawable/icon_android"
+        app:bgdrawable_type="repeat"
+        app:fontdrawable="@drawable/icon_android2"
+        app:fontdrawable_type="repeat"
+        app:cantouch="true"
+        app:maxprogress="100"/>
+
+    <com.monke.mprogressbar.MHorProgressBar
+        android:id="@+id/mhp_5"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_width="300dp"
+        android:layout_height="105dp"
+        app:bgdrawable="@drawable/loading_nor"
+        app:bgdrawable_type="clamp"
+        app:fontdrawable="@drawable/loading_sel"
+        app:fontdrawable_type="cover"
+        app:cantouch="true"
+        app:startLeftOrRight="left"
+        app:maxprogress="100"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="以上为MHorProgressBar控件，MVerProgressBar类似  是直立版如下"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"/>
+
+    <com.monke.mprogressbar.MVerProgressBar
+        android:id="@+id/mvp_1"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="105dp"
+        app:bgdrawable="@drawable/loading_nor"
+        app:bgdrawable_type="clamp"
+        app:fontdrawable="@drawable/loading_sel"
+        app:fontdrawable_type="cover"
+        app:startTopOrBottom="bottom"
+        app:cantouch="true"
+        app:maxprogress="100"/>
+</com.monke.immerselayout.ImmerseLinearLayout>

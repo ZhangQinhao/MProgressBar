@@ -1,0 +1,40 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'//添加
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "24.0.3"
+
+    defaultConfig {
+        minSdkVersion 9
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions{
+        abortOnError false
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.1.0'
+}
+
+//添加
+publish {
+    userOrg = 'zhangmonke'//bintray.com用户名
+    groupId = 'com.zhangmonke'//jcenter上的路径
+    artifactId = 'MProgressBar'//项目名称
+    publishVersion = '1.0.0'//版本号
+    desc = 'some views like progressbar'//描述，不重要
+    website = 'https://github.com/ZhangQinhao/MProgressBar'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
+}

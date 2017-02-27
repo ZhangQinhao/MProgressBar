@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--MProgressBar相关-->
+    <declare-styleable name="MProgressBar">
+        <attr name="maxprogress" format="float"/>    <!--设置最大值-->   <!--通用-->
+        <attr name="durprogress" format="float"/>    <!--设置当前值-->  <!--通用-->
+        <attr name="bgdrawable" format="color|reference"/>    <!--进度条背景颜色或者图片--> <!--通用-->
+        <attr name="bgbordercolor" format="color"/>  <!--底部边框颜色 默认与底色相同-->   <!--通用-->
+        <attr name="bgborderwidth" format="dimension"/> <!--底部边框宽度-->   <!--通用-->
+        <attr name="fontdrawable" format="color|reference"/>    <!--进度颜色或者图片--> <!--通用-->
+        <attr name="cursordrawable" format="reference"/>     <!--游标图标-->   <!--通用-->
+        <attr name="cursordrawable_width" format="dimension"/>   <!--游标图标宽度-->  <!--通用-->
+        <attr name="cursordrawable_height" format="dimension"/>   <!--游标图标高度-->   <!--通用-->
+        <attr name="progresswidth" format="dimension"/>   <!--进度条宽度  默认最大-->  <!--通用-->
+
+        <attr name="fontdrawable_type">    <!--进度颜色或者图片显示类型-->  <!--MVerProgressBar MHorProgressBar-->
+            <enum name="clamp" value="0"/>   <!--拉伸-->
+            <enum name="repeat" value="1"/>   <!--重复-->
+            <enum name="cover" value="2"/>  <!--覆盖  一般适用上层图片覆盖下层图片,通常bgdrawable_type=clamp  详见Sample - id:mpb_5-->
+        </attr>
+
+        <attr name="cantouch" format="boolean"/>  <!--是否可以点击-->   <!--MVerProgressBar MHorProgressBar-->
+
+        <attr name="bgdrawable_type">    <!--进度条背景颜色或者图片显示类型-->  <!--MVerProgressBar MHorProgressBar-->
+            <enum name="clamp" value="0"/>   <!--拉伸-->
+            <enum name="repeat" value="1"/>   <!--重复-->
+        </attr>
+
+        <attr name="radius" format="dimension"/>    <!--进度条圆角半径--> <!--MVerProgressBar MHorProgressBar-->
+        <attr name="startLeftOrRight">    <!--进度方向：从左开始/从右开始--><!--进度方向：逆时针/顺时针-->  <!--MHorProgressBar MRingProgressBar-->
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr name="startTopOrBottom">    <!--进度方向：从下开始/还是从上开始-->  <!--MVerProgressBar-->
+            <enum name="bottom" value="0"/>
+            <enum name="top" value="1"/>
+        </attr>
+        <attr name="startangle" format="integer"/>    <!--开始角度--> <!--MRingProgressBar-->
+    </declare-styleable>
+</resources>
