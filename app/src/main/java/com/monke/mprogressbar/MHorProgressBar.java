@@ -469,6 +469,7 @@ public class MHorProgressBar extends View {
             dur = maxProgress;
         }
         durProgressFinal = dur;
+        durProgress = durProgressFinal;
         refreshDurProgress(durProgress);
         if (progressListener != null) {
             final float finalDurProgress = dur;

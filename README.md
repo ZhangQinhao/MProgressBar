@@ -4,7 +4,7 @@
 ### 引用
 
  - Android Studio  
- 在build.gradle引入 `compile 'com.zhangmonke:MProgressBar:1.0.0'  `
+ 在build.gradle引入 `compile 'com.zhangmonke:MProgressBar:1.0.1'  `
  
  - Maven  
 ``` stylus

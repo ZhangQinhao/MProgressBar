@@ -34,7 +34,7 @@ publish {
     userOrg = 'zhangmonke'//bintray.com用户名
     groupId = 'com.zhangmonke'//jcenter上的路径
     artifactId = 'MProgressBar'//项目名称
-    publishVersion = '1.0.0'//版本号
+    publishVersion = '1.0.1'//版本号
     desc = 'some views like progressbar'//描述，不重要
     website = 'https://github.com/ZhangQinhao/MProgressBar'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
 }

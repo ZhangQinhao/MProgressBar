@@ -282,6 +282,7 @@ public class MRingProgressBar extends View {
             dur = maxProgress;
         }
         durProgressFinal = dur;
+        durProgress = durProgressFinal;
         refreshDurProgress(durProgress);
     }
 
